@@ -8,11 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      // https://tailwindcss.com/docs/animation#customizing-your-theme
+      animation: {
+        slideFade: 'slideFadeKeyFrame .5s forwards',
       },
+      keyframes: {
+        slideFadeKeyFrame: {
+          '0%': { transform: 'scaleY(1)' },
+          '100%': { transform: 'scaleY(0)', visibility: 'hidden' },
+        }
+      }
     },
   },
   plugins: [],
