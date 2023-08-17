@@ -1,60 +1,44 @@
 import Image from 'next/image'
+import { roboto_mono } from './fonts'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="z-0">
+      <div className="flex justify-center">
+        <div className="flex justify-center justify-items-center">
+          <div className="flex rounded-xl shadow-xl mb-10 mx-5 mt-40 px-12 py-6">
+            <div className="w-80 h-full">
+                <Image className="w-60 h-60 rounded-full" src="/img/avatar.png" alt="tomo0611's avatar" width={240} height={240}/>
+              </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div className={"flex flex-auto flex-col p-4 gap-2 "+roboto_mono.className}>
+              <h2 className="font-bold text-2xl">Hi~👋</h2>
+              <div className="whitespace-pre-line">
+                <p>I'm <span className="text-accent">tomo</span></p><p>This is my <span className="text-accent">home page</span></p><p>Here are some <span className="text-accent">useful links</span> to my profile:</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                <div className="flex justify-center">
+                  <div className="flex flex-row flex-wrap justify-center m-3">
+                    <div>
+                      <button title="Blog" className="btn btn-circle m-2"><i className="bi bi-journal"></i></button>
+                    </div>
+                    <div>
+                      <button title="GitHub" className="btn btn-circle m-2"><i className="bi bi-github"></i></button>
+                    </div>
+                    <div>
+                      <button title="Instagram" className="btn btn-circle m-2"><i className="bi bi-instagram"></i></button>
+                    </div>
+                    <div>
+                      <button title="Line" className="btn btn-circle m-2"><i className="bi bi-line"></i></button>
+                    </div>
+                    <div><button title="Mail" className="btn btn-circle m-2"><i className="bi bi-envelope"></i></button></div>
+                    <div><button title="Twitter" className="btn btn-circle m-2"><i className="bi bi-twitter"></i></button></div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+                  </div></div><p>Feel free to make friend with me. </p>
+
+              </div><div className="justify-end"><button className="underline">Learn more→</button></div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )

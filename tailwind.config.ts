@@ -26,6 +26,8 @@ const config: Config = {
       },
       colors: {
         'primary': '#1f2937',
+        'nav': '#2c3e50',
+        'accent': '#19ae9f'
       }
     },
   },

@@ -7,3 +7,10 @@ export const roboto_mono = Roboto_Mono({
     subsets: ['latin'],
     display: 'swap',
 })
+
+export const roboto_mono_bold = Roboto_Mono({
+    weight: '600',
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap',
+})

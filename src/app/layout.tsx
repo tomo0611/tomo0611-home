@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Navigation } from './ui/Navigation'
+import { roboto_mono, roboto_mono_bold } from './fonts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,16 +24,16 @@ export default function RootLayout({
       <body className={inter.className}>
 
         {/* Here is our main header that is used across all the pages of our website  */}
+        {/* 今回はヘッダーがいらないので削除 */}
+        {/*<header><h1>Header</h1></header> */}
 
-        <header>
-          <h1>Header</h1>
-        </header>
-
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/links">Links</a></li>
-            <li><a href="/about">About me</a></li>
+        <nav className={roboto_mono_bold.className+" p-5"}>
+          <ul className='flex justify-center text-nav'>
+            <Navigation navLinks={[
+              { name: 'Home', href: '/' },
+              { name: 'Links', href: '/links' },
+              { name: 'About me', href: '/about' },
+            ]} />
           </ul>
         </nav>
 
@@ -39,8 +41,8 @@ export default function RootLayout({
         {children}
 
         {/* And here is our main footer that is used across all the pages of our website  */}
-        <footer>
-          <p>©2023 tomo0611. All Rights Reserved.</p>
+        <footer className={roboto_mono.className + ' text-center p-5'}>
+          <p>© Copyright 2023 tomo0611. All Rights Reserved.</p>
         </footer>
 
       </body>

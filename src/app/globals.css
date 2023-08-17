@@ -15,3 +15,10 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+/* Separators for Navigation from https://stackoverflow.com/questions/5688791/separators-for-navigation */
+nav li+li:before {
+  content: " | ";
+  font-family: 'Roboto Mono', monospace;
+  padding: 0 5px 0 10px;
+}
