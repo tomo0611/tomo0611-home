@@ -1,24 +1,32 @@
-# tomo0611-home
+# tomo0611-home (開発中)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+このプロジェクトは [Next.js](https://nextjs.org/)で作った僕のホームページ。
 
-## Getting Started
+## 初期セットアップ
+```bash
+npx create-next-app@latest
+```
 
-First, run the development server:
+```
+(version 13.4.16)
+Project name : tomo0611-home
+Use TypeScript : Yes
+Use ESLint : Yes
+Use Tailwind CSS : Yes
+Use `src/` directory : Yes
+Use App Router? (recommended) : Yes
+Customize the default import alias? : No
+```
+
+## 実行
+
+開発サーバーは以下のコマンドで動かす。
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+それから、 [http://localhost:3000](http://localhost:3000) を開いて結果を見る。
 
 ## Learn More
 
@@ -29,8 +37,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on どこか
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+部活の共有サーバーにデプロイする予定です。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Next.js deployment documentation](https://nextjs.org/docs/deployment)で詳細を学ぶ。
