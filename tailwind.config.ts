@@ -10,13 +10,22 @@ const config: Config = {
     extend: {
       // https://tailwindcss.com/docs/animation#customizing-your-theme
       animation: {
-        slideFade: 'slideFadeKeyFrame .5s forwards',
+        slideFade: 'slideFadeKeyFrame 1.5s forwards',
+        rotate: 'rotate 2s linear infinite',
       },
       keyframes: {
         slideFadeKeyFrame: {
-          '0%': { transform: 'scaleY(1)' },
-          '100%': { transform: 'scaleY(0)', visibility: 'hidden' },
+          '0%': { transform: 'translateY(0%)' },
+          '30%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)', visibility: 'hidden' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         }
+      },
+      colors: {
+        'primary': '#1f2937',
       }
     },
   },

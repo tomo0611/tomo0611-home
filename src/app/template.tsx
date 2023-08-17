@@ -12,14 +12,15 @@ DOM elements are recreated, state is not preserved, and effects are re-synchroni
 */
 
 import Image from "next/image";
+import { roboto_mono } from '@/app/fonts'
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return <div>
-        {/* animate-slideFade */}
-        <div className="fixed top-0 left-0 w-[100vw] h-[100vh] z-50 bg-[#FDCBB5] duration-500 delay-1000 origin-top flex justify-center items-center">
+        <div className="fixed top-0 left-0 w-[100vw] h-[100vh] z-50 bg-pink-200 animate-slideFade duration-500 delay-1000 origin-top flex justify-center items-center">
             <div>
-            <Image className="block m-auto rounded-full" src="/images/profile.png" alt="flower" width={240} height={240}/>
-            <p className={"mt-4 text-4xl text-center"}>Loading...</p>
+                <Image className="block m-auto rounded-full absolute animate-rotate" src="/images/bg_common_circleline.png" alt="flower" width={240} height={240} />
+                <Image className="block m-auto rounded-full" src="/images/profile.png" alt="tomo0611's profile picture" width={240} height={240} />
+                <p className={"mt-4 text-4xl text-center text-primary " + roboto_mono.className}>Loading...</p>
             </div>
         </div>
         <div>{children}</div>
