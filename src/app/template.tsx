@@ -11,10 +11,17 @@ a new instance of the component is mounted,
 DOM elements are recreated, state is not preserved, and effects are re-synchronized.
 */
 
+import Image from "next/image";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return <div>
-        <div className="fixed top-0 left-0 w-[100vw] h-[100vh] z-50 bg-[#FDCBB5] animate-slideFade duration-500 delay-1000 origin-top"></div>
+        {/* animate-slideFade */}
+        <div className="fixed top-0 left-0 w-[100vw] h-[100vh] z-50 bg-[#FDCBB5] duration-500 delay-1000 origin-top flex justify-center items-center">
+            <div>
+            <Image className="block m-auto rounded-full" src="/images/profile.png" alt="flower" width={240} height={240}/>
+            <p className={"mt-4 text-4xl text-center"}>Loading...</p>
+            </div>
+        </div>
         <div>{children}</div>
     </div>
 }
