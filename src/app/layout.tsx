@@ -1,4 +1,5 @@
 import './globals.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './ui/Navigation'
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className+" bg-pink-50"}>
 
         {/* Here is our main header that is used across all the pages of our website  */}
         {/* 今回はヘッダーがいらないので削除 */}
@@ -42,7 +43,7 @@ export default function RootLayout({
 
         {/* And here is our main footer that is used across all the pages of our website  */}
         <footer className={roboto_mono.className + ' text-center p-5'}>
-          <p>© Copyright 2023 tomo0611. All Rights Reserved.</p>
+          <span className='inline-block'>© Copyright 2023 tomo0611.</span> <span className='inline-block'>All Rights Reserved.</span>
         </footer>
 
       </body>
