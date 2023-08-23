@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './ui/Navigation'
 import { roboto_mono, roboto_mono_bold } from './fonts'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Header } from './components/Header'
+import { yomogi } from './fonts'
 
 export const metadata: Metadata = {
   title: "tomo0611",
@@ -22,13 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className+" bg-pink-50"}>
+      <body className={yomogi.className+" bg-pink-50 text-primary"}>
 
         {/* Here is our main header that is used across all the pages of our website  */}
         {/* 今回はヘッダーがいらないので削除 */}
-        {/*<header><h1>Header</h1></header> */}
+        <Header/>
 
-        <nav className={roboto_mono_bold.className+" p-5"}>
+        {/*<nav className={roboto_mono_bold.className+" p-5"}>
           <ul className='flex justify-center text-nav'>
             <Navigation navLinks={[
               { name: 'Home', href: '/' },
@@ -36,13 +36,13 @@ export default function RootLayout({
               { name: 'About me', href: '/about' },
             ]} />
           </ul>
-        </nav>
+          </nav>*/}
 
         {/* Here is our page's main content */}
         {children}
 
         {/* And here is our main footer that is used across all the pages of our website  */}
-        <footer className={roboto_mono.className + ' text-center p-5'}>
+        <footer className='text-center p-5'>
           <span className='inline-block'>© Copyright 2023 tomo0611.</span> <span className='inline-block'>All Rights Reserved.</span>
         </footer>
 
