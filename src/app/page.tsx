@@ -15,11 +15,24 @@ export default function Home() {
               </div>
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Hi~👋</h2>
+              <h2 className="card-title text-accent">tomo0611</h2>
               <div className="whitespace-pre-line">
-                <p>I'm <span className="text-accent">tomo</span></p>
-                <p>This is my <span className="text-accent">home page</span></p>
-                <p>Here are some <span className="text-accent">useful links</span> to my profile:</p>
+
+                <p className='text-sm mt-4'>
+                  所属
+                </p>
+                <p>大阪公立大学 工学部 情報工学科 B2 (学部2年)</p>
+
+                <p className='text-sm mt-4'>
+                  分野
+                </p>
+                <p>Web系 / Ubuntu / Androidアプリ開発</p>
+
+                <p className='text-sm mt-4'>
+                  趣味
+                </p>
+                <p>プログラミング / アニメ</p>
+
                 <div className="flex justify-center">
                   <div className="flex flex-row flex-wrap justify-center m-3">
                     <Fav navLinks={[
@@ -27,6 +40,7 @@ export default function Home() {
                       { name: 'Instagram', href: 'https://www.instagram.com/tomo06.11/', icon: 'instagram' },
                       { name: 'Mail', href: 'mailto:tomo0611@hotmail.com', icon: 'envelope' },
                       { name: 'Twitter', href: 'https://twitter.com/tomo0611_dev', icon: 'twitter' },
+                      { name: 'Zenn', href: 'https://zenn.dev/tomo0611', icon: 'zenn' },
                     ]} />
                   </div>
                 </div>
