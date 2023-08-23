@@ -2,13 +2,14 @@ import Image from 'next/image'
 import { roboto_mono, yomogi } from './fonts'
 import Link from 'next/link'
 import { Fav } from './components/Fav'
+import { SkillCards } from './components/SkillCards'
 
 export default function Home() {
   return (
     <main className={"z-0 " + yomogi.className}>
       <div>
         <div className="flex justify-center">
-          <div className="bg-white card md:card-side shadow-xl mx-5 md:mt-20 mb-10 md:max-w-4xl">
+          <div className="bg-white card md:card-side shadow-xl mx-5 md:mt-20 mt-10 mb-10 md:max-w-4xl">
             <figure className="md:w-80 md:h-full">
               <div className="md:w-60 md:h-60 w-full h-full md:rounded-full overflow-hidden">
                 <Image className="w-full h-full" src="/img/avatar.png" alt="tomo0611's avatar" width={240} height={240} />
@@ -48,7 +49,7 @@ export default function Home() {
                 <p>Twitterやインスタでおはなししたいな、、 </p>
               </div>
               <div className="card-actions justify-end">
-                <Link href="/about" className='underline hover:text-pink-500 duration-200'>
+                <Link href="/" className='underline hover:text-pink-500 duration-200'>
                   もっと知る→
                 </Link>
               </div>
@@ -56,10 +57,105 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className='mt-4 rounded-md bg-white shadow-xl mx-5 mb-10 md:max-w-4xl'>
-            <p className='text-accent text-2xl'>Skills</p>
+          <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl md:px-6 w-120'>
+            <p className='mt-8  text-accent text-2xl font-semibold ml-3'>Skills - 技術と分野</p>
+            <div className='mt-2 ml-4 mr-4'>
+              <p>ボクの技術について紹介します。</p>
+              <p>未熟なので、チョットデキル(完璧に使いこなせる)技術はありません😥</p>
+              <p>これから増やしていきます、</p>
+            </div>
+            <div className='mx-12 mt-4 mb-16 grid grid-cols-1n md:grid-cols-2 gap-2 md:gap-4'>
+              <SkillCards skills={[
+                {
+                  name: 'Next.js', icon_name: 'nextjs', category: 'Framework', text1: 'むっちゃ使ってる。', text2: '最近の悩みの種だいたいこれ。'
+                },
+                {
+                  name: 'React', icon_name: 'react', category: 'Language', text1: '基本からしっかりやりたい', text2: ''
+                },
+                {
+                  name: 'Tailwind', icon_name: 'tailwind', category: 'Library', text1: 'デザイン用', text2: ''
+                },
+                {
+                  name: 'Visual Studio Code', icon_name: 'vscode', category: 'Software', text1: '一番使ってる開発環境。', text2: ''
+                },
+                {
+                  name: 'C++', icon_name: 'cpp', category: 'Language', text1: '競プロのために始めました。', text2: ''
+                },
+                {
+                  name: 'Python', icon_name: 'py', category: 'Language', text1: 'スクレイピングとかで使う。', text2: ''
+                },
+                {
+                  name: 'GitHub & Git', icon_name: 'github', category: 'Service & Version Control Software', text1: 'いつも使ってます。', text2: ''
+                },
+                {
+                  name: 'Linux (Ubuntu)', icon_name: 'linux', category: 'Operating System', text1: '職場でRHELを強要されてます、', text2: 'タスケテ、、、'
+                },
+                {
+                  name: 'Docker', icon_name: 'docker', category: 'Containerization', text1: '部活の大先輩に言われて始めました。', text2: ''
+                },
+                {
+                  name: 'Kotlin', icon_name: 'kotlin', category: 'language', text1: 'Androidアプリ開発用。', text2: ''
+                },
+                {
+                  name: 'Android Studio', icon_name: 'androidstudio', category: 'Software', text1: '小6からやってます。', text2: ''
+                },
+                {
+                  name: 'Figma', icon_name: 'figma', category: 'Software', text1: 'まだまだ勉強中❗', text2: ''
+                },
+                {
+                  name: 'Firebase', icon_name: 'firebase', category: 'Cloud Platform', text1: '今はHostingを主に利用。', text2: '昔はAndroidアプリで使ってた。'
+                },
+                {
+                  name: 'Photoshop', icon_name: 'ps', category: 'Software', text1: '画像編集。', text2: ''
+                },
+                {
+                  name: 'PHP', icon_name: 'php', category: 'Language', text1: '最近はもうやってない。', text2: ''
+                },
+                {
+                  name: '正規表現', icon_name: 'regex', category: 'Language', text1: 'しっかりやりたい', text2: ''
+                }
+              ]} />
+            </div>
+          </div>
         </div>
+
+        <div className="flex justify-center">
+          <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 w-120'>
+            <p className='mt-8  text-accent text-2xl font-semibold'>Works - 作品</p>
+            <div className='mt-2 ml-2'>
+              <p>今まで執筆してきた記事たち</p>
+            </div>
+            <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
+              準備中
+            </div>
+          </div>
         </div>
+      
+        <div className="flex justify-center">
+          <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 w-120'>
+            <p className='mt-8  text-accent text-2xl font-semibold'>Articles - 記事など</p>
+            <div className='mt-2 ml-2'>
+              <p>今まで執筆してきた記事たち</p>
+            </div>
+            <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
+              準備中
+            </div>
+          </div>
+        </div>
+
+
+        <div className="flex justify-center">
+          <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 w-120'>
+            <p className='mt-8  text-accent text-2xl font-semibold'>Events - イベント</p>
+            <div className='mt-2 ml-2'>
+              <p>※登壇したもののみ</p>
+            </div>
+            <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
+              なし
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
   )
