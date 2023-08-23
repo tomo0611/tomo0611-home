@@ -1,5 +1,5 @@
 import './globals.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'simple-icons-font/font/simple-icons.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from './ui/Navigation'

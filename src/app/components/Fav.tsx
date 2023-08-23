@@ -12,7 +12,7 @@ export function Fav({ navLinks }: { navLinks: { name: string, href: string, icon
                         key={link.name}
                         target='_blank'
                     >
-                        <i className={"w-12 h-12 text-primary bi bi-" + link.icon}></i>
+                        <i className={"w-12 h-12 text-primary si si--color si-" + link.icon}></i>
                     </Link>
                 )
             })}
