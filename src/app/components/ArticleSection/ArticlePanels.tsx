@@ -4,8 +4,7 @@ import { headers } from "next/headers";
 
 export async function ArticlePanels() {
     const host = headers().get("host");
-    const protocol = process?.env.NODE_ENV === "development" ? "http" : "https";
-    const articles: article[] = await (await fetch(`${protocol}://${host}/api/articles`, { cache: "no-store" })).json();
+    const articles: article[] = await (await fetch(`http://${host}/api/articles`, { cache: "no-store" })).json();
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
