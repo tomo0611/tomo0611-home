@@ -111,7 +111,7 @@ export default function Home() {
             <div className='mt-2 md:mx-6 mx-8'>
               <p>はやく登壇できるように頑張ります…‼️</p>
             </div>
-            <div className='md:mx-12 mt-4 mb-8 grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='mx-12 mt-4 mb-8 grid grid-cols-1 md:grid-cols-2 gap-4'>
               なし
             </div>
           </div>
