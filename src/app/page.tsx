@@ -49,14 +49,16 @@ export default function Home() {
                     ]} />
                   </div>
                 </div>
+                <div className='mt-2 mb-1'>
                 <p>ボクとお友達になりませんか？</p>
                 <p>Twitterやインスタでおはなししたいな、、 </p>
+                </div>
               </div>
-              <div className="card-actions justify-end">
+              {/*<div className="card-actions justify-end">
                 <Link href="/" className='underline hover:text-pink-500 duration-200'>
                   もっと知る→
                 </Link>
-              </div>
+                  </div>*/}
             </div>
           </div>
         </div>
