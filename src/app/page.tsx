@@ -39,7 +39,7 @@ export default function Home() {
                 <p>プログラミング / アニメ</p>
 
                 <div className="flex justify-center">
-                  <div className="flex flex-row flex-wrap justify-center mx-2 my-3">
+                  <div className="flex flex-row flex-wrap justify-center mx-[-2rem] my-3">
                     <Fav navLinks={[
                       { name: 'Twitter', href: 'https://twitter.com/tomo0611_dev', icon: 'twitter' },
                       { name: 'GitHub', href: 'https://github.com/tomo0611', icon: 'github' },
@@ -80,7 +80,7 @@ export default function Home() {
             <div className='mt-2 md:mx-6 mx-8'>
               <p>今まで作ってきた作品</p>
             </div>
-            <div className='mx-4 md:mx-12 mt-4 mb-8'>
+            <div className='md:mx-12 mt-4 mb-8'>
               <div className="flex justify-center">
                 <WorkPanels />
               </div>
@@ -94,10 +94,12 @@ export default function Home() {
             <div className='mt-2 md:mx-6 mx-8'>
               <p>今まで執筆してきた記事たち</p>
             </div>
-            <div className='mx-12 mt-4 mb-8'>
-              <Suspense fallback={<p>取得中...</p>}>
-                <ArticlePanels />
-              </Suspense>
+            <div className='md:mx-12 mt-4 mb-8'>
+              <div className="flex justify-center">
+                <Suspense fallback={<p>取得中...</p>}>
+                  <ArticlePanels />
+                </Suspense>
+              </div>
             </div>
           </div>
         </div>
