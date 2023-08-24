@@ -20,7 +20,7 @@ export async function GET(request: Request) {
         articles.push({
             id: article.id,
             title: article.title,
-            created_at: article.lastmod,
+            created_at: article.lastmod.substring(0,10).replaceAll("-", "/"),
             url: `https://ch-random.net/post/${article.id}/`,
             thumbnailPath: `https://ch-random.net${article.thumbnailPath}`,
             media: "random"

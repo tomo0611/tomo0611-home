@@ -9,7 +9,7 @@ type WorkPanelProps = {
 
 export const WorkPanel: FC<WorkPanelProps> = ({ work }) => {
     return ( work.url != '' ? 
-        <Link className="bg-white p-3 drop-shadow rounded-lg hover:drop-shadow-lg duration-200 w-[18rem]" href={work.url}>
+        <Link className="bg-white p-3 drop-shadow rounded-lg hover:drop-shadow-lg duration-200 w-[18rem]" href={work.url} target='_blank'>
             <Image src={`/img/works/${work.id}.png`} alt={work.name} width={500} height={400} />
             <div className='mt-6 border'/>
             <p className='text-lg font-semibold mt-2'>{work.name}</p>

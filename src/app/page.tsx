@@ -1,10 +1,12 @@
 import Image from 'next/image'
+import { Suspense } from 'react'
 import { yomogi } from './fonts'
 import Link from 'next/link'
 import { Fav } from './components/Fav'
 import { WorkPanels } from './components/WorkSection/WorkPanels'
 import { SkillPanels } from './components/SkillSection/SkillPanels'
 import { ContactPanels } from './components/ContactSection/ContactPanels'
+import { ArticlePanels } from './components/ArticleSection/ArticlePanels'
 
 export default function Home() {
   return (
@@ -92,8 +94,10 @@ export default function Home() {
             <div className='mt-2 md:mx-6 mx-8'>
               <p>今まで執筆してきた記事たち</p>
             </div>
-            <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
-              準備中
+            <div className='mx-12 mt-4 mb-8'>
+              <Suspense fallback={<p>取得中...</p>}>
+                <ArticlePanels />
+              </Suspense>
             </div>
           </div>
         </div>
