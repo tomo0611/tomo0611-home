@@ -8,7 +8,7 @@ export async function ArticlePanels() {
     const articles: article[] = await (await fetch(`${protocol}://${host}/api/articles`, { cache: "no-store" })).json();
 
     return (
-        <div className='grid grid-cols-1n md:grid-cols-2 gap-2 md:gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
             {articles.map((article) => (
                 <ArticleCard key={article.id} article={article} />
             ))}
