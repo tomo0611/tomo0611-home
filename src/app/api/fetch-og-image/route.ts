@@ -6,12 +6,16 @@ export async function GET(request: Request) {
         ? searchParams.get("url")!!
         : "https://ch-random.net/post/461/featured.png";
 
-    const imageRes = await fetch(url);
-    const blob = await imageRes.blob();
-    const arrayBuffer = await blob.arrayBuffer();
-    const contentType = imageRes.headers.get('Content-Type');
+    if (url.startsWith("https://ch-random.net")) {
+        const imageRes = await fetch(url);
+        const blob = await imageRes.blob();
+        const arrayBuffer = await blob.arrayBuffer();
+        const contentType = imageRes.headers.get('Content-Type');
 
-    // https://stackoverflow.com/questions/63066985/send-file-as-response-using-nextjs-api
+        // https://stackoverflow.com/questions/63066985/send-file-as-response-using-nextjs-api
 
-    return new Response(Buffer.from(arrayBuffer), { headers: { 'content-type': contentType ?? 'image/png' } });
+        return new Response(Buffer.from(arrayBuffer), { headers: { 'content-type': contentType ?? 'image/png' } });
+    } else {
+        return new Response(null, { status: 403 });
+    }
 }
