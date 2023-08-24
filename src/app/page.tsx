@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import { roboto_mono, yomogi } from './fonts'
+import { yomogi } from './fonts'
 import Link from 'next/link'
 import { Fav } from './components/Fav'
-import { SkillCards } from './components/SkillSection/SkillCard'
 import { WorkPanels } from './components/WorkSection/WorkPanels'
 import { SkillPanels } from './components/SkillSection/SkillPanels'
 
@@ -37,7 +36,7 @@ export default function Home() {
                 <p>プログラミング / アニメ</p>
 
                 <div className="flex justify-center">
-                  <div className="flex flex-row flex-wrap justify-center m-3">
+                  <div className="flex flex-row flex-wrap justify-center mx-2 my-3">
                     <Fav navLinks={[
                       { name: 'Twitter', href: 'https://twitter.com/tomo0611_dev', icon: 'twitter' },
                       { name: 'GitHub', href: 'https://github.com/tomo0611', icon: 'github' },
@@ -60,8 +59,8 @@ export default function Home() {
         </div>
         <div className="flex justify-center">
           <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl md:px-6 md:w-[48rem] w-[25rem]'>
-            <p className='mt-8 text-accent text-2xl font-semibold ml-3'>Skills - 技術と分野</p>
-            <div className='mt-2 ml-4 mr-4'>
+            <p className='mt-8 text-accent text-2xl font-semibold md:ml-2 ml-5'>Skills - 技術と分野</p>
+            <div className='mt-2 md:mx-6 mx-8'>
               <p>ボクの技術について紹介します。</p>
               <p>未熟なので、チョットデキル(完璧に使いこなせる)技術はありません😥</p>
               <p>これから増やしていきます、</p>
@@ -74,8 +73,8 @@ export default function Home() {
 
         <div className="flex justify-center">
           <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 md:w-[48rem] w-[25rem]'>
-            <p className='mt-8  text-accent text-2xl font-semibold ml-3'>Works - 作品</p>
-            <div className='mt-2 ml-4'>
+            <p className='mt-8 text-accent text-2xl font-semibold md:ml-2 ml-5'>Works - 作品</p>
+            <div className='mt-2 md:mx-6 mx-8'>
               <p>今まで作ってきた作品</p>
             </div>
             <div className='mx-4 md:mx-12 mt-4 mb-8'>
@@ -88,8 +87,8 @@ export default function Home() {
 
         <div className="flex justify-center">
           <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 md:w-[48rem] w-[25rem]'>
-            <p className='mt-8  text-accent text-2xl font-semibold'>Articles - 記事など</p>
-            <div className='mt-2 ml-2'>
+            <p className='mt-8 text-accent text-2xl font-semibold md:ml-2 ml-5'>Articles - 記事など</p>
+            <div className='mt-2 md:mx-6 mx-8'>
               <p>今まで執筆してきた記事たち</p>
             </div>
             <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
@@ -101,8 +100,8 @@ export default function Home() {
 
         <div className="flex justify-center">
           <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 md:w-[48rem] w-[25rem]'>
-            <p className='mt-8  text-accent text-2xl font-semibold'>Events - イベント</p>
-            <div className='mt-2 ml-2'>
+            <p className='mt-8 text-accent text-2xl font-semibold md:ml-2 ml-5'>Events - イベント</p>
+            <div className='mt-2 md:mx-6 mx-8'>
               <p>はやく登壇できるように頑張ります…‼️</p>
             </div>
             <div className='mx-12 mt-4 mb-8 grid grid-cols-1n md:grid-cols-2 gap-4'>
