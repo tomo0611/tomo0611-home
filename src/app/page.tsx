@@ -115,7 +115,7 @@ export default function Home() {
           <div className='mt-4 rounded-2xl bg-white shadow-xl mx-5 mb-10 md:max-w-4xl px-6 md:w-[48rem] w-[25rem]'>
             <p className='mt-8 text-accent text-2xl font-semibold md:ml-2 ml-5'>Contact - お問い合わせ</p>
             <div className='mt-2 md:mx-6 mx-8'>
-              <p>以下の方法でお願いします！</p>
+              <p>以下の方法でお願いします❕</p>
             </div>
             <div className='mx-12 mt-4 mb-8'>
               <ContactPanels />
