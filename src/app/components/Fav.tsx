@@ -8,10 +8,10 @@ export function Fav({ navLinks }: { navLinks: { name: string, href: string, icon
                 return (
                     <Link
                         key={link.name}
-                        className='w-12 h-12 bg-gray-200 hover:bg-pink-300 rounded-full duration-200 m-2 text-center'
+                        className='m-1 rounded-full text-center'
                         href={link.href}
                         target='_blank'>
-                            <i className={"pt-4 text-xl si si--color si-" + link.icon}></i>
+                            <i className={"text-xl p-3 rounded-full hover:bg-pink-300 duration-200 bg-gray-200 si si--color si-" + link.icon}></i>
                     </Link>
                 )
             })}
