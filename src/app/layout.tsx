@@ -9,8 +9,9 @@ import { yomogi } from './fonts'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tomo0611.jp'),
   title: "tomo0611",
-  description: "tomo0611's homepage",
+  description: "tomo0611'sの自己紹介サイトへようこそ！",
 }
 
 // See Document and website structure for more information on the below HTML
