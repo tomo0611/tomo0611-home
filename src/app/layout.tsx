@@ -6,6 +6,7 @@ import { Navigation } from './ui/Navigation'
 import { roboto_mono, roboto_mono_bold } from './fonts'
 import { Header } from './components/Header'
 import { yomogi } from './fonts'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: "tomo0611",
@@ -22,11 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={yomogi.className+" bg-pink-50 text-primary"}>
+      <head>
+        <GoogleAnalytics />
+      </head>
+      <body className={yomogi.className + " bg-pink-50 text-primary"}>
 
         {/* Here is our main header that is used across all the pages of our website  */}
         {/* 今回はヘッダーがいらないので削除 */}
-        <Header/>
+        <Header />
 
         {/*<nav className={roboto_mono_bold.className+" p-5"}>
           <ul className='flex justify-center text-nav'>
