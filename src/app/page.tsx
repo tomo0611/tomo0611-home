@@ -38,7 +38,7 @@ export default function Home() {
                 </p>
                 <p>プログラミング / アニメ</p>
 
-                <div className="flex justify-center">
+                <div className="mt-2 flex justify-center">
                   <div className="flex flex-row flex-wrap justify-center mx-[-2rem] my-3">
                     <Fav navLinks={[
                       { name: 'Twitter', href: 'https://twitter.com/tomo0611_dev', icon: 'twitter' },
