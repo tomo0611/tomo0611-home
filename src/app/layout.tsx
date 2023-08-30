@@ -1,9 +1,6 @@
 import './globals.css'
 import 'simple-icons-font/font/simple-icons.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Navigation } from './ui/Navigation'
-import { roboto_mono, roboto_mono_bold } from './fonts'
 import { Header } from './components/Header'
 import { yomogi } from './fonts'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
@@ -12,6 +9,43 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://tomo0611.jp'),
   title: "tomo0611",
   description: "tomo0611'sの自己紹介サイトへようこそ！",
+  generator: 'Next.js',
+  applicationName: 'Next.js',
+  keywords: ['tomo0611','大阪公立大学','情報工学科','プログラミング','Next.js', 'React', 'JavaScript'],
+  creator: 'tomo0611',
+  publisher: 'tomo0611',
+  openGraph: {
+    title: 'tomo0611',
+    description: 'tomo0611\'sの自己紹介サイトへようこそ！',
+    url: 'https://tomo0611.jp',
+    siteName: 'tomo0611.jp',
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+    },
+  },
+  themeColor: '#fbcfe8',
+  twitter: {
+    card: 'summary_large_image',
+    title: 'tomo0611',
+    description: 'tomo0611\'sの自己紹介サイトへようこそ！',
+    creator: '@tomo0611_dev',
+  },
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['tomo0611@hotmail.com', 'tomo0611.jp'],
+    },
+  },
+
 }
 
 // See Document and website structure for more information on the below HTML
