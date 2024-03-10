@@ -1,7 +1,8 @@
+export const runtime = 'edge';
+
 import Image from 'next/image'
 import { Suspense } from 'react'
 import { yomogi } from './fonts'
-import Link from 'next/link'
 import { Fav } from './components/Fav'
 import { WorkPanels } from './components/WorkSection/WorkPanels'
 import { SkillPanels } from './components/SkillSection/SkillPanels'
@@ -50,8 +51,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='mt-2 mb-1'>
-                <p>ボクとお友達になりませんか？</p>
-                <p>Twitterやインスタでおはなししたいな、、 </p>
+                  <p>ボクとお友達になりませんか？</p>
+                  <p>Twitterやインスタでおはなししたいな、、 </p>
                 </div>
               </div>
               {/*<div className="card-actions justify-end">

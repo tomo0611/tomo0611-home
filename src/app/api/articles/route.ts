@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { article, random_article_response } from "@/app/data/articles";
 import { NextResponse } from "next/server";
 import { parse } from 'node-html-parser';
