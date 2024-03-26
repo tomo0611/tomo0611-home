@@ -2,7 +2,7 @@ import './globals.css'
 import 'simple-icons-font/font/simple-icons.css'
 import type { Metadata } from 'next'
 import { Header } from './components/Header'
-import { noto_sans, yomogi } from './fonts'
+import { noto_sans } from './fonts'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
