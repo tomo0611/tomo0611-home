@@ -2,7 +2,7 @@ export const runtime = 'edge';
 
 import Image from 'next/image'
 import { Suspense } from 'react'
-import { yomogi } from './fonts'
+import { noto_sans } from './fonts'
 import { Fav } from './components/Fav'
 import { WorkPanels } from './components/WorkSection/WorkPanels'
 import { SkillPanels } from './components/SkillSection/SkillPanels'
@@ -11,7 +11,7 @@ import { ArticlePanels } from './components/ArticleSection/ArticlePanels'
 
 export default function Home() {
   return (
-    <main className={"z-0 " + yomogi.className}>
+    <main className={"z-0 " + noto_sans.className}>
       <div>
         <div className="flex justify-center">
           <div className="bg-white card md:card-side shadow-xl mx-5 md:mt-20 mt-10 mb-10 md:max-w-4xl md:w-[48rem] w-[25rem]">
