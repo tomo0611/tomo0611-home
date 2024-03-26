@@ -6,19 +6,19 @@ import { yomogi } from './fonts'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tomo0611.jp'),
+  metadataBase: new URL('https://tomo0611.dev'),
   title: "tomo0611",
   description: "tomo0611'sの自己紹介サイトへようこそ！",
   generator: 'Next.js',
   applicationName: 'Next.js',
-  keywords: ['tomo0611','大阪公立大学','情報工学科','プログラミング','Next.js', 'React', 'JavaScript'],
+  keywords: ['tomo0611', '大阪公立大学', '情報工学科', 'プログラミング', 'Next.js', 'React', 'JavaScript'],
   creator: 'tomo0611',
   publisher: 'tomo0611',
   openGraph: {
     title: 'tomo0611',
     description: 'tomo0611\'sの自己紹介サイトへようこそ！',
-    url: 'https://tomo0611.jp',
-    siteName: 'tomo0611.jp',
+    url: 'https://tomo0611.dev',
+    siteName: 'tomo0611.dev',
     locale: 'ja_JP',
     type: 'website',
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     yandex: 'yandex',
     yahoo: 'yahoo',
     other: {
-      me: ['tomo0611@hotmail.com', 'tomo0611.jp'],
+      me: ['tomo0611@hotmail.com', 'tomo0611.dev'],
     },
   },
 
