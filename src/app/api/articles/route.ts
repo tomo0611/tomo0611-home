@@ -18,7 +18,7 @@ export async function GET(request: Request) {
             title: article.title,
             created_at: new Date(article.date_created),
             url: `https://ch-random.net/post/${article.id}/`,
-            thumbnailPath: `https://randomer.ch-random.net/assets/${article.thumbnailPath}`,
+            thumbnailPath: `https://randomer.ch-random.net/assets/${article.thumbnail}`,
             media: "random"
         })
     }
