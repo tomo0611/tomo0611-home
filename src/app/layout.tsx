@@ -38,14 +38,10 @@ export const metadata: Metadata = {
     creator: '@tomo0611_dev',
   },
   verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
     other: {
       me: ['tomo0611@hotmail.com', 'tomo0611.dev'],
     },
   },
-
 }
 
 // See Document and website structure for more information on the below HTML
