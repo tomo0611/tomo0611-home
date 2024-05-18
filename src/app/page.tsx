@@ -27,7 +27,7 @@ export default function Home() {
                 <p className='text-sm mt-4'>
                   所属
                 </p>
-                <p>大阪公立大学 工学部 情報工学科 B2 (学部2年)</p>
+                <p>大阪公立大学 工学部 情報工学科 B3 (学部3年)</p>
 
                 <p className='text-sm mt-4'>
                   分野
